@@ -57,13 +57,8 @@ function App() {
    *
    */
   const handleDeleteCartItem = (index) => {
-    console.log(index);
     setProductsInCart((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
   }
-
-  React.useEffect(() => {
-    console.log(productsInCart);
-  }, [productsInCart]);
 
   return <>
     <Header openCart={() => setOpenCart(true)}/>

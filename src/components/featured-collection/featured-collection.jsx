@@ -48,7 +48,7 @@ export default function FeaturedCollection({ products, productSelected }) {
     <section>
       <h1 className="font-bold text-[1.813rem] text-customGreen/[.58] text-center mt-[3.188rem]">Featured Collection</h1>
 
-      <div className="grid grid-cols-1 mt-[2.75rem] gap-x-6 gap-y-[1.875rem] xsm:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:max-w-[59.4375rem] lg:m-auto lg:grid-cols-4 ml-[1.3125rem] mr-[1.375rem] box-border">
+      <div className="grid grid-cols-1 gap-x-6 gap-y-[1.875rem] xsm:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:max-w-[59.4375rem] lg:m-auto xsm:pt-[2.75rem] lg:grid-cols-4 ml-[1.3125rem] mr-[1.375rem] box-border">
         { selectedProducts.map((product, index) =>  <Product productSelected={handleProductSelected} product={product} key={`product-${index}`}/>) }
       </div>
 
